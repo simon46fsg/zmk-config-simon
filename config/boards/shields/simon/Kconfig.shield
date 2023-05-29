@@ -1,0 +1,5 @@
+config SHIELD_SIMON_LEFT
+    def_bool $(shields_list_contains,simon_left)
+
+config SHIELD_SIMON_RIGHT
+    def_bool $(shields_list_contains,simon_right)
