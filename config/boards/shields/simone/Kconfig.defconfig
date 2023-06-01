@@ -1,0 +1,6 @@
+if SHIELD_SIMONE
+
+config ZMK_KEYBOARD_NAME
+    default "simone"
+
+endif

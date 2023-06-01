@@ -1,0 +1,2 @@
+config SHIELD_SIMONE
+    def_bool $(shields_list_contains,simone)
