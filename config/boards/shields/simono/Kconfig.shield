@@ -1,0 +1,5 @@
+config SHIELD_SIMONO_LEFT
+    def_bool $(shields_list_contains,simono_left)
+
+config SHIELD_SIMONO_RIGHT
+    def_bool $(shields_list_contains,simono_right)

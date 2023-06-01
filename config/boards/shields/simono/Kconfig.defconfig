@@ -1,0 +1,16 @@
+if SHIELD_SIMONO_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "simono"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SIMONO_LEFT || SHIELD_SIMONO_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
