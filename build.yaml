@@ -14,6 +14,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: simon_left
+    shield: simono_left
   - board: nice_nano_v2
-    shield: simon_right
+    shield: simono_right
