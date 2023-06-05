@@ -10,7 +10,7 @@
     &kp Q    &kp W    &kp E     &kp R     &kp T                                                 &kp Z     &kp U     &kp I     &kp O     &kp P    
     &kp A    &kp S    &kp D     &kp F     &kp G                                                 &kp H     &kp J     &kp K     &kp L     &kp BKSP 
     &kp Y    &kp X    &kp C     &kp V     &kp B      					                    	&kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH 
-                      &kp LGUI  &kp SPACE &kp CTRL                                              &kp TAB   &kp RSHFT  &kp RALT
+                      &kp LGUI  &kp SPACE &kp LCTRL                                             &kp TAB   &kp RSHFT  &kp RALT
             >;
         };
     };
