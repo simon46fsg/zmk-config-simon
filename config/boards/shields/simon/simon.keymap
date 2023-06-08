@@ -1,5 +1,4 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
+keymap_german.h
 
 / {
     keymap {
@@ -7,10 +6,28 @@
 
         default_layer {
             bindings = <
-    &kp Q    &kp W    &kp E     &kp R     &kp T                                                 &kp Z     &kp U     &kp I     &kp O     &kp P    
-    &kp A    &kp S    &kp D     &kp F     &kp G                                                 &kp H     &kp J     &kp K     &kp L     &kp BKSP 
-    &kp Y    &kp X    &kp C     &kp V     &kp B      					                    	&kp N     &kp M     &kp COMMA &kp DOT   &kp MINUS
-                      &kp LGUI  &kp SPACE &kp LCTRL                                             &kp TAB   &kp RSHFT  &kp RALT
+            &kp Q    &kp W    &kp E     &kp R     &kp Y                                                 &kp Z     &kp U     &kp I     &kp DE_ODIA     &kp P    
+            &kp A    &kp S    &kp D     &kp F     &kp G                                                 &kp H     &kp J     &kp K     &kp L     &kp BKSP 
+            &kp Z    &kp X    &kp C     &kp V     &kp B      					                    	&kp N     &kp M     &kp COMMA &kp DOT   &kp G_MINUS
+                              &kp LGUI  &kp SPACE &mo 2                                                 &mo 1     &kp RSHFT  &kp ENTER
+            >;
+        };
+
+        nav_layer {
+            bindings = <
+            &kp NUM_1   &kp NUM_2   &kp NUM_3    &kp NUM_4    &kp NUM_5                   &kp NUM_6    &kp NUM_7    &kp NUM_8    &kp NUM_9    &kp NUM_0    
+            &kp A       &kp S       &kp D        &kp F        &kp G                       &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &kp C_APP 
+            &kp Y       &kp X       &kp C        &kp V        &kp B      	              &kp HOME     &kp PG_DN    &kp PG_UP    &kp END      &trans
+                                    &kp LGUI     &kp LCTRL    &kp LALT                    &trans       &trans       &trans
+            >;
+        };
+
+        symbols_layer {
+            bindings = <
+            &kp Q    &kp W    &kp E     &kp R     &kp T                                                 &kp Z     &kp U     &kp I     &kp O     &kp P    
+            &kp A    &kp S    &kp D     &kp F     &kp G                                                 &kp H     &kp J     &kp K     &kp L     &kp BKSP 
+            &kp Y    &kp X    &kp C     &kp V     &kp B      					                    	&kp N     &kp M     &kp COMMA &kp DOT   &kp MINUS
+                              &kp LGUI  &kp SPACE &kp LCTRL                                             &kp TAB   &kp RSHFT  &kp RALT
             >;
         };
     };
