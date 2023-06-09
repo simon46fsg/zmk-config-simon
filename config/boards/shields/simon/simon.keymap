@@ -1,17 +1,25 @@
 #include "keymap_german.h"
 
-&mt {
-    tapping-term-ms = <200>;
-};
-
 / {
+   behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
             &kp Q         &kp W         &kp E         &kp R         &kp T                      &kp Y         &kp U         &kp I         &kp O         &kp P
-            &kp A         &mt LALT S    &mt LALT D    &mt LCTRL F   &kp G                      &kp H         &mt LCTRL J   &mt LALT K    &mt LGUI L    &kp BKSP
+            &kp A         &hm LALT S    &hm LALT D    &hm LCTRL F   &kp G                      &kp H         &hm LCTRL J   &hm LALT K    &hm LGUI L    &kp BKSP
             &kp Z         &kp X         &kp C         &kp V         &kp B                      &kp N         &kp M         &kp DE_COMM   &kp DE_DOT    &kp DE_MINS
                                         &kp LGUI      &kp SPACE     &mo 1                      &kp TAB       &kp RSHFT     &kp ENTER
             >;
@@ -20,7 +28,7 @@
         num_layer {
             bindings = <
             &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                      &kp N6        &kp N7        &kp N8        &kp N9        &kp N0
-            &kp DE_ADIA   &kp DE_ODIA   &kp DE_UDIA   &kp DE_SS     &none                       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BKSP
+            &kp DE_ADIA   &kp DE_ODIA   &kp DE_UDIA   &kp DE_SS     &kp ESC                     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BKSP
             &trans        &trans        &trans        &trans        &trans                      &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       &kp K_APP
                                         &trans        &trans        &trans                      &trans        &trans        &trans
             >;
