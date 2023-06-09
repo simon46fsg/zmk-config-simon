@@ -6,10 +6,19 @@
 
         default_layer {
             bindings = <
-    &kp Q    &kp W    &kp E     &kp R     &kp T                                                 &kp Z     &kp U     &kp I     &kp DE_ODIA     &kp P    
-    &kp A    &kp S    &kp D     &kp F     &kp G                                                 &kp H     &kp J     &kp K     &kp L     &kp BKSP 
-    &kp Y    &kp X    &kp C     &kp V     &kp B      					                    	&kp N     &kp M     &kp COMMA &kp DOT   &kp MINUS
-                      &kp LGUI  &kp SPACE &kp LCTRL                                             &kp TAB   &kp RSHFT  &kp RALT
+            &kp Q         &kp W         &kp E         &kp R         &kp T                      &kp Y         &kp U         &kp I         &kp O         &kp P    
+            &kp A    &kp S    &kp D     &kp F     &kp G                                        &kp H         &kp J         &kp K         &kp L         &kp BKSP 
+            &kp Z    &kp X    &kp C     &kp V     &kp B      					               &kp N         &kp M         &kp DE_COMM   &kp DE_DOT    &kp DE_MINS
+                              &kp LGUI  &kp SPACE &mo 1                                        &kp TAB       &kp RSHFT     &kp ENTER
+            >;
+        };
+
+        default_layer {
+            bindings = <
+            &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                      &kp N6        &kp N7        &kp N8        &kp N9        &kp N0    
+            &kp DE_ADIA   &kp DE_ODIA   &kp DE_UDIA   &kp DE_SS     &none                       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BKSP 
+            &kp Y         &kp X         &kp C         &kp V         &kp B      					&kp HOME      &kp PG_DN     &kp PG_UP     &kp END       &kp C_APP
+                                        &trans        &trans        &trans                      &trans        &trans        &trans
             >;
         };
     };
