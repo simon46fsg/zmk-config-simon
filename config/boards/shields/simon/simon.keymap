@@ -32,6 +32,7 @@
             &trans        &trans        &trans        &trans        &trans                      &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       &kp K_APP
                                         &trans        &trans        &trans                      &trans        &trans        &trans
             >;
+        };
 
         symbols_layer {
             bindings = <
