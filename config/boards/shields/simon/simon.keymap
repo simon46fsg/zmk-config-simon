@@ -21,7 +21,7 @@
             &kp Q         &kp W         &kp E         &kp R         &kp T                      &kp Y         &kp U         &kp I         &kp O         &kp P
             &kp A         &hm LALT S    &hm LALT D    &hm LCTRL F   &kp G                      &kp H         &hm LCTRL J   &hm LALT K    &hm LGUI L    &kp BKSP
             &kp Z         &kp X         &kp C         &kp V         &kp B                      &kp N         &kp M         &kp DE_COMM   &kp DE_DOT    &kp DE_MINS
-                                        &kp LGUI      &kp SPACE     &mo 1                      &kp TAB       &kp RSHFT     &kp ENTER
+                                        &kp ESC       &kp SPACE     &mo 1                      &mo 1         &kp RSHFT     &kp ENTER
             >;
         };
 
@@ -30,6 +30,14 @@
             &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                      &kp N6        &kp N7        &kp N8        &kp N9        &kp N0
             &kp DE_ADIA   &kp DE_ODIA   &kp DE_UDIA   &kp DE_SS     &kp ESC                     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BKSP
             &trans        &trans        &trans        &trans        &trans                      &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       &kp K_APP
+                                        &trans        &trans        &trans                      &trans        &trans        &trans
+            >;
+
+        symbols_layer {
+            bindings = <
+            &kp DE_EXCL   &kp DE_DQT    &kp DE_SQT    &kp DE_DLR    &kp DE_PERC                 &kp DE_AMPS   &kp DE_FSLH   &kp DE_LPAR   &kp DE_RPAR   &kp DE_EQL
+            &kp DE_PLUS   &kp DE_STAR   &kp DE_HASH   &kp DE_AT     &kp DE_EURO                 &kp DE_PIPE   &kp DE_LABK   &kp DE_LBRC   &kp DE_RBRC   &kp DE_RABK
+            &kp DE_GRV    &kp DE_ACUT   &kp DE_CIRC   &kp DE_DEG    &kp DE_BSLH                 &kp DE_SECT   &kp DE_TILD   &kp DE_LBKT   &kp DE_RBKT   &kp DE_QUES
                                         &trans        &trans        &trans                      &trans        &trans        &trans
             >;
         };
