@@ -6,10 +6,37 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+        };
+
+        odht: od_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "OD_HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+
+        sh_space: shift_space {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_SPACE";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp DE_UNDS>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        bspc_del: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DELETE";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
         };
     };
 
@@ -18,10 +45,10 @@
 
         default_layer {
             bindings = <
-            &kp Q         &kp W         &kp E         &kp R         &kp T                      &kp Y         &kp U         &kp I         &kp O         &kp P
-            &kp A         &hm LALT S    &hm LALT D    &hm LCTRL F   &kp G                      &kp H         &hm LCTRL J   &hm LALT K    &hm LGUI L    &kp BKSP
+            &kp Q         &kp W         &kp E         &kp R         &kp T                      &kp Y         &odht U Ü     &kp I         &odht O Ö     &kp P
+            &odht A Ä     &hm LGUI S    &hm LALT D    &hm LCTRL F   &kp G                      &kp H         &hm LCTRL J   &hm LALT K    &hm LGUI L    &bspc_del
             &kp Z         &kp X         &kp C         &kp V         &kp B                      &kp N         &kp M         &kp DE_COMM   &kp DE_DOT    &kp DE_MINS
-                                        &kp ESC       &kp SPACE     &mo 2                      &mo 1         &kp RSHFT     &kp ENTER
+                                        &kp ESC       &sh_space     &mo 2                      &mo 1         &kp RSHFT     &kp ENTER
             >;
         };
 
