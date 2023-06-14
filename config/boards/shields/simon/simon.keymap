@@ -27,7 +27,7 @@
             label = "SHIFT_SPACE";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp DE_UNDS>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         bspc_del: backspace_delete {
@@ -45,8 +45,8 @@
 
         default_layer {
             bindings = <
-            &kp Q               &kp W         &kp E         &kp R         &kp T                      &kp Y         &odht U DE_UDIA     &kp I         &odht O DE_ODIA     &kp P
-            &odht A DE_ADIA     &hm LGUI S    &hm LALT D    &hm LCTRL F   &kp G                      &kp H         &hm LCTRL J         &hm LALT K    &hm LGUI L          &bspc_del
+            &kp Q               &kp W         &kp E         &kp R         &kp T                      &kp Y         &odht DE_UDIA U     &kp I         &odht DE_ODIA O     &kp P
+            &odht DE_ADIA A     &hm LGUI S    &hm LALT D    &hm LCTRL F   &kp G                      &kp H         &hm LCTRL J         &hm LALT K    &hm LGUI L          &bspc_del
             &kp Z               &kp X         &kp C         &kp V         &kp B                      &kp N         &kp M               &kp DE_COMM   &kp DE_DOT          &kp DE_MINS
                                               &kp ESC       &sh_space     &mo 2                      &mo 1         &kp RSHFT           &kp ENTER
             >;
