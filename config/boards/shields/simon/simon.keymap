@@ -47,15 +47,15 @@
             &kp Q               &kp W         &kp E         &kp R         &kp T                      &kp Y         &odht DE_UDIA U     &kp I         &odht DE_ODIA O     &kp P
             &odht DE_ADIA A     &hm LGUI S    &hm LALT D    &hm LCTRL F   &kp G                      &kp H         &hm LCTRL J         &hm LALT K    &hm LGUI L          &bspc_del
             &kp Z               &kp X         &kp C         &kp V         &kp B                      &kp N         &kp M               &kp DE_COMM   &kp DE_DOT          &kp DE_MINS
-                                              &kp ESC       &sh_space     &mo 2                      &mo 1         &kp RSHFT           &kp ENTER
+                                              &mo 3         &sh_space     &mo 2                      &mo 1         &kp RSHFT           &kp ENTER
             >;
         };
 
         num_layer {
             bindings = <
             &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                      &kp N6        &kp N7        &kp N8        &kp N9        &kp N0
-            &kp C         &kp DE_ODIA   &kp TAB       &kp ENTER     &kp DE_SS                   &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BKSP
-            &bt BT_SEL 0  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &trans                      &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       &kp K_APP
+            &kp ESC       &kp K_COPY    &kp TAB       &kp ENTER     &kp DE_SS                   &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BKSP
+            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR    &trans                      &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       &kp K_APP
                                         &trans        &trans        &trans                      &trans        &trans        &trans
             >;
         };
@@ -66,6 +66,14 @@
             &kp DE_PLUS   &kp DE_STAR   &kp DE_HASH   &kp DE_AT     &kp DE_EURO                 &kp DE_PIPE   &kp DE_LABK   &kp DE_LBRC   &kp DE_RBRC   &kp DE_RABK
             &kp DE_GRV    &kp DE_ACUT   &kp DE_CIRC   &kp DE_DEG    &kp DE_BSLH                 &kp DE_SECT   &kp DE_TILD   &kp DE_LBKT   &kp DE_RBKT   &kp DE_QUES
                                         &trans        &trans        &trans                      &trans        &trans        &trans
+            >;
+
+        f_layer {
+            bindings = <
+            &kp F1        &kp F2        &kp F3        &kp F4        &trans                  &trans    &trans    &trans    &trans    &trans
+            &kp F5        &kp F6        &kp F7        &kp F8        &trans                  &trans    &trans    &trans    &trans    &trans
+            &kp F9        &kp F10       &kp F11       &kp F12       &trans                  &trans    &trans    &trans    &trans    &trans
+                                        &trans        &trans        &trans                  &trans    &trans    &trans
             >;
         };
     };
