@@ -67,6 +67,7 @@
             &kp DE_GRV    &kp DE_ACUT   &kp DE_CIRC   &kp DE_DEG    &kp DE_BSLH                 &kp DE_SECT   &kp DE_TILD   &kp DE_LBKT   &kp DE_RBKT   &kp DE_QUES
                                         &trans        &trans        &trans                      &trans        &trans        &trans
             >;
+        };
 
         f_layer {
             bindings = <
